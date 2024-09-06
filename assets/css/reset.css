@@ -1,0 +1,24 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    width: 100%;
+  }
+  body {
+    background-color:rgb(251 248 246);
+  }
+  img {
+    width:100%;
+    display:block;
+  }
+  ul {
+    display:flex;
+    list-style-type: none;
+    gap:28px;
+  }
+  a {
+    text-decoration:none;
+  }

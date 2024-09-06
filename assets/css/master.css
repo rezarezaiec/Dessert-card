@@ -1,0 +1,191 @@
+/* @font-face for Red Hat Font */
+@font-face {
+  font-family: "red hat";
+  src: url("../../public/fonts/static/RedHatText-Regular.ttf");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "red hat";
+  src: url("../../public/fonts/static/RedHatText-Bold.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "red hat";
+  src: url("../../public/fonts/static/RedHatText-SemiBold.ttf");
+  font-weight: 400;
+}
+
+/* Root Variables */
+:root {
+  --text-color-1: rgb(173, 72, 38);
+  --text-color-2: rgb(164, 135, 131);
+  --text-color-3: rgb(161, 150, 145);
+  font-family: "Red Hat";
+  font-weight: 500;
+}
+
+/********** Start Your Card **********/
+.your-cart {
+  background-color: white;
+  max-width: 100%;
+}
+.your-cart .cart-title {
+  font-weight: 700;
+  color: var(--text-color-1);
+  font-size: 22px;
+}
+.your-cart .cart-image {
+  max-width: 80px;
+}
+.your-cart .cart-info .cart-desc {
+  color: var(--text-color-2);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/*** Start Responsive Your Card ***/
+@media (max-width: 992px) {
+  .your-cart .cart-title {
+    font-size: 18px;
+  }
+  .your-cart .cart-image {
+    max-width: 70px;
+  }
+  .your-cart .cart-info .cart-desc {
+    font-size: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .your-cart .cart-title {
+    font-size: 4.5vw;
+  }
+  .your-cart .cart-image {
+    max-width: 18vw;
+  }
+  .your-cart .cart-info .cart-desc {
+    font-size: 3vw;
+  }
+}
+/*** End Responsive Your Card ***/
+/********** End Your Card **********/
+
+/********** Start Card **********/
+.cards {
+  position: relative;
+  display: inline-block;
+}
+.card-image {
+  aspect-ratio: 1;
+  position: relative;
+}
+.card-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/******* Start Btn *******/
+.card-btn {
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 65%;
+  text-align: center;
+  z-index: 1;
+}
+.add-to-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 10px;
+  background-color: white;
+  border: 1px solid rgb(164, 135, 131);
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s, color 0.3s;
+}
+.add-to-cart:hover {
+  background-color: rgb(195, 193, 193);
+  color: white;
+}
+.btn-text {
+  font-size: 14px;
+  font-weight: 500;
+}
+.btn-icon img {
+  max-width: 25px;
+}
+/******* End Btn *******/
+
+/*** Start Responsive Card Btn ***/
+@media (max-width: 992px) {
+  .add-to-cart {
+    padding: 8px 12px;
+  }
+  .btn-text {
+    font-size: 7px;
+  }
+  .btn-icon img {
+    max-width: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .btn-text {
+    font-size: 3.2vw;
+  }
+  .btn-icon img {
+    max-width: 4vw;
+  }
+}
+/*** End Responsive Card Btn ***/
+
+/******* Start Card Info *******/
+.desserts-card .cards .card-info .info-desc h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.desserts-card .cards .card-info .info-price {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text-color-1);
+}
+
+/*** Start Responsive Card Info ***/
+@media (max-width: 992px) {
+  .desserts-card .cards .card-info .info-title {
+    font-size: 12px;
+  }
+  .desserts-card .cards .card-info .info-desc h3 {
+    font-size: 14px;
+  }
+  .desserts-card .cards .card-info .info-price {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .desserts-card .cards .card-info .info-title {
+    font-size: 10px;
+  }
+  .desserts-card .cards .card-info .info-desc h3 {
+    font-size: 12px;
+  }
+  .desserts-card .cards .card-info .info-price {
+    font-size: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .desserts-card .cards .card-info .info-title {
+    font-size: 3.5vw;
+  }
+  .desserts-card .cards .card-info .info-desc h3 {
+    font-size: 5vw;
+  }
+  .desserts-card .cards .card-info .info-price {
+    font-size: 3.5vw;
+  }
+}
+/*** End Responsive Card Info ***/
+/******* End Card Info *******/
+/********** End Card **********/
